@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { MatrixRain } from "../components/MatrixRain";
+import { SystemStatusSidebar } from "../components/SystemStatusSidebar";
+import { CRTOverlay } from "../components/CRTOverlay";
+import { PanicButton } from "../components/PanicButton";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -19,11 +23,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
-        className={`${jetbrainsMono.variable} antialiased bg-[#0a0a0a] text-white font-mono`}
+        className={`${jetbrainsMono.variable} antialiased flex overflow-hidden h-screen bg-black`}
       >
-        {children}
+        <CRTOverlay />
+        <MatrixRain />
+        <PanicButton />
+
+        {/* Fixed Sidebar */}
+        <SystemStatusSidebar />
+
+        {/* Main Content Area */}
+        <div className="flex-1 relative z-10 h-full overflow-y-auto overflow-x-hidden lg:ml-[20%]">
+          {children}
+        </div>
       </body>
     </html>
   );

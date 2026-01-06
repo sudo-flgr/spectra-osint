@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export function Navbar() {
@@ -11,18 +12,34 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-spectra-bg/80 backdrop-blur-md border-b border-white/10"
     >
-      <div className="text-xl font-bold tracking-tighter text-spectra-cyan">
-        SPECTRA
+      <div className="relative h-10 w-40">
+        <Image
+          src="/logo.jpg"
+          alt="SPECTRA Logo"
+          fill
+          className="object-contain object-left mix-blend-screen"
+          priority
+        />
       </div>
-      <div className="flex gap-6 text-sm">
-        <Link href="#about" className="hover:text-spectra-pink transition-colors">
-          Sobre
+      <div className="flex gap-8 text-sm font-mono tracking-wider">
+        <Link
+          href="https://github.com/cyno/OSINTKit-Brasil"
+          target="_blank"
+          className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
+        >
+          [ FERRAMENTAS ]
         </Link>
-        <Link href="#tools" className="hover:text-spectra-pink transition-colors">
-          Ferramentas
+        <Link
+          href="#"
+          className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
+        >
+          [ GUIAS ]
         </Link>
-        <Link href="#contact" className="hover:text-spectra-pink transition-colors">
-          Contato
+        <Link
+          href="#contato"
+          className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
+        >
+          [ CANAL_SEGURO ]
         </Link>
       </div>
     </motion.nav>
