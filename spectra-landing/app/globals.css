@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: var(--font-jetbrains-mono);
+
+  --color-spectra-bg: #0a0a0a;
+  --color-spectra-cyan: #00FFFF;
+  --color-spectra-pink: #FFC0CB;
+}
+
+:root {
+  --background: var(--color-spectra-bg);
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono);
+}
