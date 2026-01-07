@@ -23,8 +23,7 @@ export function Navbar() {
       </div>
       <div className="flex gap-8 text-sm font-mono tracking-wider">
         <Link
-          href="https://github.com/cyno/OSINTKit-Brasil"
-          target="_blank"
+          href="/ferramentas/retificacao"
           className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
         >
           [ FERRAMENTAS ]
