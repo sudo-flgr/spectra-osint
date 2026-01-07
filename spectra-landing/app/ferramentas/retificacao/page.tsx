@@ -109,6 +109,7 @@ export default function RectificationPage() {
         // Save
         doc.save(`Notificacao_Retificacao_${selectedCompany.replace(/\s/g, '_')}.pdf`);
         setIsGenerating(false);
+        setShowSuccessModal(true);
     };
 
     const getDorkLink = (type: 'email' | 'privacy') => {
@@ -120,9 +121,56 @@ export default function RectificationPage() {
         return `https://www.google.com/search?q=${encodeURIComponent(`site:${domainPart}.com.br filetype:pdf "política de privacidade"`)}`;
     };
 
+    const [showSuccessModal, setShowSuccessModal] = useState(false);
+
     return (
-        <main className="min-h-screen bg-spectra-bg text-white selection:bg-spectra-cyan/30 flex flex-col font-mono">
+        <main className="min-h-screen bg-spectra-bg text-white selection:bg-spectra-cyan/30 flex flex-col font-mono relative">
             <Navbar />
+
+            {/* Success Modal */}
+            {showSuccessModal && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
+                    <div className="bg-black border-2 border-spectra-cyan p-8 max-w-lg w-full shadow-[0_0_30px_rgba(0,243,255,0.2)] animate-in fade-in zoom-in duration-300 relative">
+                        <h3 className="text-2xl font-black text-spectra-cyan uppercase mb-4 tracking-tighter">
+                            ARQUIVO GERADO COM SUCESSO
+                        </h3>
+                        <p className="text-white mb-6">
+                            O PDF foi salvo no seu dispositivo. Agora complete a missão:
+                        </p>
+
+                        <div className="space-y-4 mb-8 bg-gray-900/50 p-4 rounded border border-gray-800">
+                            <div className="flex items-center gap-3">
+                                <div className="w-6 h-6 rounded-full bg-spectra-cyan/20 flex items-center justify-center text-spectra-cyan font-bold text-xs">1</div>
+                                <p className="text-sm">Abra seu cliente de e-mail.</p>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-6 h-6 rounded-full bg-spectra-cyan/20 flex items-center justify-center text-spectra-cyan font-bold text-xs">2</div>
+                                <div className="text-sm flex-1">
+                                    <span className="text-gray-400 text-xs block">Copie o e-mail:</span>
+                                    <div className="flex items-center justify-between gap-2">
+                                        <code className="text-spectra-pink">{dpoEmail}</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-6 h-6 rounded-full bg-spectra-cyan/20 flex items-center justify-center text-spectra-cyan font-bold text-xs">3</div>
+                                <p className="text-sm font-bold text-green-400">Anexe o PDF gerado.</p>
+                            </div>
+                            <div className="flex items-center gap-3">
+                                <div className="w-6 h-6 rounded-full bg-spectra-cyan/20 flex items-center justify-center text-spectra-cyan font-bold text-xs">4</div>
+                                <p className="text-sm text-gray-300">Envie com confirmação de leitura.</p>
+                            </div>
+                        </div>
+
+                        <Button
+                            onClick={() => setShowSuccessModal(false)}
+                            className="w-full bg-spectra-cyan text-black hover:bg-white font-bold uppercase py-4"
+                        >
+                            [ FECHAR ]
+                        </Button>
+                    </div>
+                </div>
+            )}
 
             <div className="flex-1 w-full max-w-4xl mx-auto px-6 py-32">
 

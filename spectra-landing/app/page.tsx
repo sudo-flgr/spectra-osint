@@ -8,8 +8,8 @@ export default function Home() {
     <main className="min-h-screen bg-spectra-bg text-white selection:bg-spectra-cyan/30">
       <Navbar />
       <Hero />
-      <ContactSection />
       <PartnersSection />
+      <ContactSection />
 
       {/* Background Grid Effect - Optional for extra aesthetic */}
       <div className="fixed inset-0 pointer-events-none z-[-1] opacity-20"

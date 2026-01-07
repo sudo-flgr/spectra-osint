@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { CodeBlock } from "./CodeBlock";
 import { Button } from "./ui/Button";
@@ -63,12 +64,16 @@ export function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <Button className="bg-spectra-cyan text-black hover:bg-white hover:text-black rounded-none border-2 border-spectra-cyan font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_rgba(255,255,255,1)]">
-            [ INICIAR_PROTOCOLO ]
-          </Button>
-          <Button className="bg-transparent text-spectra-pink border-2 border-spectra-pink hover:bg-spectra-pink hover:text-black rounded-none font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all">
-            DADOS_DO_ALVO
-          </Button>
+          <Link href="/ferramentas/retificacao" className="w-full md:w-auto">
+            <Button className="w-full bg-spectra-cyan text-black hover:bg-white hover:text-black rounded-none border-2 border-spectra-cyan font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_rgba(255,255,255,1)]">
+              [ INICIAR DEFESA ]
+            </Button>
+          </Link>
+          <Link href="/manifesto" className="w-full md:w-auto">
+            <Button className="w-full bg-transparent text-spectra-pink border-2 border-spectra-pink hover:bg-spectra-pink hover:text-black rounded-none font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all">
+              [ LER MANIFESTO ]
+            </Button>
+          </Link>
         </div>
       </div>
 

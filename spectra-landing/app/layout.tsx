@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SPECTRA Protocol",
-  description: "Democratizing Cyber-Defense.",
+  title: "SPECTRA | Defesa Cibernética Trans & Travesti",
+  description: "Ferramentas de defesa digital, proteção de dados e OSINT para a comunidade trans e travesti.",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
         <SystemStatusSidebar />
 
         {/* Main Content Area */}
-        <div className="flex-1 relative z-10 h-full overflow-y-auto overflow-x-hidden lg:ml-[20%]">
+        <div className="flex-1 relative z-10 h-full overflow-y-auto overflow-x-hidden lg:pl-80">
           {children}
         </div>
       </body>
