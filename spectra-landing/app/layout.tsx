@@ -13,8 +13,21 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SPECTRA | Defesa Cibernética Trans & Travesti",
-  description: "Ferramentas de defesa digital, proteção de dados e OSINT para a comunidade trans e travesti.",
+  title: "SPECTRA | Defesa Cibernética & OSINT",
+  description: "Protocolo de defesa digital para a comunidade trans e travesti. Ferramentas de retificação LGPD, proteção de dados e contra-vigilância.",
+  keywords: ["OSINT", "LGPD", "Defesa Digital", "Trans", "Segurança da Informação", "Retificação de Nome"],
+  openGraph: {
+    title: "SPECTRA | Defesa Cibernética & OSINT",
+    description: "Protocolo de defesa digital para a comunidade trans e travesti.",
+    url: "https://spectra-osint.org",
+    siteName: "SPECTRA",
+    type: "website",
+    locale: "pt_BR",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
