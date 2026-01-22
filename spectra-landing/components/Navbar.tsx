@@ -50,10 +50,10 @@ export function Navbar() {
           </div>
         </div>
         <Link
-          href="#"
+          href="/guias"
           className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
         >
-          [ GUIAS ]
+          [ MANUAL ]
         </Link>
         <Link
           href="/#contato"

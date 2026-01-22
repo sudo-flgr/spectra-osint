@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Book, FileText } from "lucide-react";
 import { CodeBlock } from "./CodeBlock";
 import { Button } from "./ui/Button";
 
@@ -64,14 +65,29 @@ export function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <Link href="/ferramentas/retificacao" className="w-full md:w-auto">
+          <Link href="/#contato" className="w-full md:w-auto">
             <Button className="w-full bg-spectra-cyan text-black hover:bg-white hover:text-black rounded-none border-2 border-spectra-cyan font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_rgba(255,255,255,1)]">
-              [ INICIAR DEFESA ]
+              [ PRECISO DE AJUDA ]
             </Button>
           </Link>
           <Link href="/manifesto" className="w-full md:w-auto">
-            <Button className="w-full bg-transparent text-spectra-pink border-2 border-spectra-pink hover:bg-spectra-pink hover:text-black rounded-none font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all">
-              [ LER MANIFESTO ]
+            <Button className="w-full bg-purple-600 hover:bg-purple-700 text-white border border-transparent rounded-none font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all shadow-[0_0_15px_rgba(147,51,234,0.5)] hover:shadow-[0_0_25px_rgba(147,51,234,0.8)]">
+              [ QUERO AJUDAR ]
+            </Button>
+          </Link>
+        </div>
+
+        <div className="mt-8 flex flex-col md:flex-row gap-4 items-center md:items-start justify-start">
+          <Link href="/guias" className="w-full md:w-auto">
+            <Button className="w-full md:w-auto text-spectra-cyan border border-spectra-cyan/50 hover:bg-spectra-cyan/10 bg-transparent font-bold uppercase tracking-widest px-6 py-4 text-sm transition-all flex items-center justify-center gap-3">
+              <Book className="w-5 h-5" />
+              [ BAIXAR MANUAL DE DEFESA ]
+            </Button>
+          </Link>
+          <Link href="/ferramentas/retificacao" className="w-full md:w-auto">
+            <Button className="w-full md:w-auto text-spectra-cyan border border-spectra-cyan/50 hover:bg-spectra-cyan/10 bg-transparent font-bold uppercase tracking-widest px-6 py-4 text-sm transition-all flex items-center justify-center gap-3">
+              <FileText className="w-5 h-5" />
+              [ GERADOR DE RETIFICAÇÃO ]
             </Button>
           </Link>
         </div>

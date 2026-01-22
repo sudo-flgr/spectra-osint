@@ -19,20 +19,23 @@ export function CodeBlock() {
 
         <pre className="text-gray-300 relative z-10">
           <code>
-            <span className="text-[#f7a8b8]">const</span> <span className="text-[#55cdfc]">PROTOCOLO_SPECTRA</span> <span className="text-white">=</span> {"{"}
-            {"\n"}  <span className="text-[#55cdfc]">missao</span>: <span className="text-[#f7a8b8]">&apos;Autodefesa_Digital&apos;</span>,
-            {"\n"}  <span className="text-[#55cdfc]">status</span>: <span className="text-[#f7a8b8] animate-pulse">&apos;VIGILANTE&apos;</span>,
-            {"\n"}  <span className="text-[#55cdfc]">protegendo</span>: [
-            {"\n"}    <span className="text-[#f7a8b8]">&apos;Comunidade_Trans&apos;</span>,
-            {"\n"}    <span className="text-[#f7a8b8]">&apos;Travestis&apos;</span>,
-            {"\n"}    <span className="text-[#f7a8b8]">&apos;População_Periférica&apos;</span>
+            <span className="text-[#f7a8b8]">const</span> <span className="text-[#55cdfc]">SPECTRA_PROTOCOL</span> <span className="text-white">=</span> {"{"}
+            {"\n"}  <span className="text-[#55cdfc]">mission</span>: <span className="text-[#f7a8b8]">&apos;PROTECT_VULNERABLE_GROUPS&apos;</span>,
+            {"\n"}  <span className="text-[#55cdfc]">target</span>: [
+            {"\n"}    <span className="text-[#f7a8b8]">&apos;MINORIAS&apos;</span>,
+            {"\n"}    <span className="text-[#f7a8b8]">&apos;DISSIDENTES&apos;</span>,
+            {"\n"}    <span className="text-[#f7a8b8]">&apos;ALVOS_POLITICOS&apos;</span>
             {"\n"}  ],
-            {"\n"}  <span className="text-[#55cdfc]">alvos_de_combate</span>: [
-            {"\n"}    <span className="text-red-500">&apos;Hate_Groups&apos;</span>,
-            {"\n"}    <span className="text-red-500">&apos;Vigilância_Corporativa&apos;</span>,
-            {"\n"}    <span className="text-red-500">&apos;Transfobia_Digital&apos;</span>
-            {"\n"}  ],
-            {"\n"}  <span className="text-[#55cdfc]">aviso</span>: <span className="text-[#ffffff] bg-red-900/50 px-1">&apos;NENHUM_PASSO_ATRAS&apos;</span>
+            {"\n"}  <span className="text-[#55cdfc]">status</span>: <span className="text-[#f7a8b8] animate-pulse">&apos;ACTIVE_DEFENSE&apos;</span>,
+            {"\n"}  <span className="text-[#55cdfc]">intro</span>: <span className="text-purple-400">() =&gt;</span> {"{"}
+            {"\n"}    <span className="text-gray-400">return</span> <span className="text-[#f7a8b8]">&quot;A vigilância não é igual para todos.&quot;</span>;
+            {"\n"}  {"},"}
+            {"\n"}  <span className="text-[#55cdfc]">reality</span>: <span className="text-purple-400">() =&gt;</span> {"{"}
+            {"\n"}    <span className="text-gray-400">return</span> <span className="text-[#f7a8b8]">&quot;Grupos vulneráveis são os primeiros alvos &quot;</span> +
+            {"\n"}           <span className="text-[#f7a8b8]">&quot;da exploração de dados e do ódio digital. &quot;</span> +
+            {"\n"}           <span className="text-[#f7a8b8]">&quot;Nossa segurança não é um produto. É sobrevivência.&quot;</span>;
+            {"\n"}  {"},"}
+            {"\n"}  <span className="text-[#55cdfc]">execution</span>: <span className="text-red-500">&apos;DECENTRALIZE_AND_PROTECT&apos;</span>
             {"\n"}{"};"}
             <span className="inline-block w-3 h-5 bg-[#55cdfc] animate-pulse ml-1 align-middle"></span>
           </code>
