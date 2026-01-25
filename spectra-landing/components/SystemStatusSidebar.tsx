@@ -26,7 +26,7 @@ export function SystemStatusSidebar() {
     }, []);
 
     return (
-        <aside className="fixed left-0 top-0 bottom-0 w-80 bg-black/90 border-r-2 border-spectra-cyan z-40 hidden lg:flex flex-col font-mono text-xs text-spectra-cyan p-4 overflow-hidden">
+        <aside className="fixed left-0 top-0 bottom-0 w-80 bg-black/90 border-r-2 border-spectra-cyan z-40 hidden 2xl:flex flex-col font-mono text-xs text-spectra-cyan p-4 overflow-hidden">
             <div className="mb-4 text-sm font-bold border-b border-spectra-cyan pb-2">
                 SYSTEM_STATUS_PANEL_V.9.0
             </div>

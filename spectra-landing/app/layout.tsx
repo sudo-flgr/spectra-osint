@@ -48,7 +48,7 @@ export default function RootLayout({
         <SystemStatusSidebar />
 
         {/* Main Content Area */}
-        <div className="flex-1 relative z-10 h-full overflow-y-auto overflow-x-hidden lg:pl-80">
+        <div className="flex-1 relative z-10 h-full overflow-y-auto overflow-x-hidden 2xl:pl-80">
           {children}
         </div>
       </body>

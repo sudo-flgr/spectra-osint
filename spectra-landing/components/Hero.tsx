@@ -64,7 +64,7 @@ export function Hero() {
           // BLINDE SUA COMUNIDADE.
         </p>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
           <Link href="/#contato" className="w-full md:w-auto">
             <Button className="w-full bg-spectra-cyan text-black hover:bg-white hover:text-black rounded-none border-2 border-spectra-cyan font-bold uppercase tracking-widest px-8 py-6 text-lg transition-all hover:translate-x-1 hover:-translate-y-1 hover:shadow-[5px_5px_0px_rgba(255,255,255,1)]">
               [ PRECISO DE AJUDA ]
@@ -77,7 +77,7 @@ export function Hero() {
           </Link>
         </div>
 
-        <div className="mt-8 flex flex-col md:flex-row gap-4 items-center md:items-start justify-start">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center justify-start w-full md:w-auto">
           <Link href="/guias" className="w-full md:w-auto">
             <Button className="w-full md:w-auto text-spectra-cyan border border-spectra-cyan/50 hover:bg-spectra-cyan/10 bg-transparent font-bold uppercase tracking-widest px-6 py-4 text-sm transition-all flex items-center justify-center gap-3">
               <Book className="w-5 h-5" />

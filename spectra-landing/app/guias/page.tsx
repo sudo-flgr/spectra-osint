@@ -39,7 +39,7 @@ export default function GuidesPage() {
 
                     <div className="mt-12 text-center">
                         <Link
-                            href="/MANUAL CUIDADOS DIGITAIS PARA PESSOAS TRANS E ALIADAS - VERSÃO FINAL OFICIAL.pdf"
+                            href="/manual-seguranca-digital-trans.pdf"
                             target="_blank"
                             download
                             className="inline-block"
