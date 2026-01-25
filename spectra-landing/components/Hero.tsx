@@ -83,7 +83,7 @@ export function Hero() {
               <Book className="w-5 h-5" />
               [ BAIXAR MANUAL DE DEFESA ]
             </Button>
-          </Link>
+          </a>
           <Link href="/ferramentas/retificacao" className="w-full md:w-auto">
             <Button className="w-full md:w-auto text-spectra-cyan border border-spectra-cyan/50 hover:bg-spectra-cyan/10 bg-transparent font-bold uppercase tracking-widest px-6 py-4 text-sm transition-all flex items-center justify-center gap-3">
               <FileText className="w-5 h-5" />
