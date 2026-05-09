@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
-import { PartnersSection } from "@/components/PartnersSection";
+import MaterialsSection from '@/components/MaterialsSection'
 import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <main className="min-h-screen bg-spectra-bg text-white selection:bg-spectra-cyan/30">
       <Navbar />
       <Hero />
-      <PartnersSection />
+      <MaterialsSection />
       <ContactSection />
 
       {/* Background Grid Effect - Optional for extra aesthetic */}

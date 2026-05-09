@@ -56,6 +56,12 @@ export function Navbar() {
           [ MANUAL ]
         </Link>
         <Link
+          href="/#materiais"
+          className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
+        >
+          [ MATERIAIS ]
+        </Link>
+        <Link
           href="/#contato"
           className="hover:text-pink-500 hover:drop-shadow-[0_0_5px_rgba(236,72,153,0.8)] transition-all duration-300"
         >
